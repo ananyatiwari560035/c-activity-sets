@@ -1,19 +1,19 @@
 //2. Write a C program to add two numbers using 4 functions.
 #include <stdio.h>
 // Welcome to the program!!
-void userinput(int *lm, int *nk); // using call by reference
-int add(int y, int z); // using call by value with parameters passed
-void display(int y, int z, int sum); // using call by value  with parameter passed
+void userinput(int *lm, int *nk); // parameters are pointers
+int add(int y, int z); // parameters passed by value
+void display(int y, int z, int sum); // parameters passed by value
 
 int main()
 {
     int y, z, sum;
 
-    userinput(&y, &z);
+    userinput(&y, &z); // function call done
 
-    sum = add(y, z);
+    sum = add(y, z);  // function call done
 
-    display(y, z, sum);
+    display(y, z, sum); // function call done
 
     return 0;
 }
